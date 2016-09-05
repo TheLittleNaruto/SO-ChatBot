@@ -4,7 +4,7 @@ module.exports = function (bot) {
 
     var seen = bot.memory.get('users'),
         // hardcoded for some (in)sanity. Change accordingly.
-        ownerRoom = 17;
+        ownerRoom = 19132;
 
     var message = bot.config.welcomeMessage;
 
