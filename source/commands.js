@@ -17,8 +17,7 @@ module.exports = function (bot) {
             }
 
             return 'Information on interacting with me can be found at ' +
-                '[this page](https://github.com/Zirak/SO-ChatBot/' +
-                'wiki/Interacting-with-the-bot)';
+                '[this page](https://github.com/TheLittleNaruto/SO-ChatBot/wiki/Interacting-with-Bot)';
         },
 
         listen: function (msg) {
