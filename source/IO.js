@@ -344,7 +344,7 @@ IO.jsonp = function (opts) {
 // generic, pre-made call to be used inside commands
 IO.jsonp.google = function (query, cb) {
     IO.jsonp({
-        url: 'http://ajax.googleapis.com/ajax/services/search/web',
+        url: 'https://ajax.googleapis.com/ajax/services/search/web',
         jsonpName: 'callback',
         data: {
             v: '1.0',
