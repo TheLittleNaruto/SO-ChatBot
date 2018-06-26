@@ -7040,7 +7040,7 @@ module.exports = function (bot) {
 
     var seen = bot.memory.get('users'),
         // hardcoded for some (in)sanity. Change accordingly.
-        ownerRoom = 17;
+        ownerRoom = 53977;
 
     var message = bot.config.welcomeMessage;
 
