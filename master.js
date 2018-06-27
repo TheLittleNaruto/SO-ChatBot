@@ -473,7 +473,7 @@ IO.jsonp = function (opts) {
 // generic, pre-made call to be used inside commands
 IO.jsonp.google = function (query, cb) {
     IO.jsonp({
-        url: 'http://ajax.googleapis.com/ajax/services/search/web',
+        url: 'https://ajax.googleapis.com/ajax/services/search/web',
         jsonpName: 'callback',
         data: {
             v: '1.0',
@@ -4673,7 +4673,7 @@ module.exports = function (bot) {
     'use strict';
 
     var randomWord = function (length, cb) {
-        var url = 'http://sleepy-bastion-8674.herokuapp.com/';
+        var url = 'https://sleepy-bastion-8674.herokuapp.com/';
 
         if (Number(length)) {
             url += '?length=' + length;
