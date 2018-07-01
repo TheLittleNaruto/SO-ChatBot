@@ -7044,7 +7044,12 @@ module.exports = function (bot) {
 
     var message = bot.config.welcomeMessage;
 
-    function welcome (name, room) {
+    function welcome (name, room, room_name) {
+		if(room_name != null){
+			message = 'Welcome to the ' + room_name + '!' +
+			'If you have a question, just post it, and if anyone\'s free and interested they\'ll help. ' +
+			'If you want to report an abusive user or a problem in this room, ping TheLittleNaruto.';
+		}	
         bot.adapter.out.add(bot.adapter.reply(name) + ' ' + message, room);
     }
 
@@ -7093,7 +7098,7 @@ module.exports = function (bot) {
             }
 
             if (newUser) {
-                welcome(user.name, room);
+                welcome(user.name, room, msgObj.room_name);
             }
 
             seen[uid] = true;
@@ -7118,7 +7123,7 @@ module.exports = function (bot) {
                 return message;
             }
 
-            welcome(args, args.get('room_id'));
+            welcome(args, args.get('room_id'), args.get('room_name');
         },
         permission: {
             del: 'NONE'
