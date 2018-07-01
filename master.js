@@ -1385,7 +1385,7 @@ var bot = window.bot = {
         }
         // mmmm....nachos
         else {
-            errMsg += ' Use the `!!/help` command to learn more.';
+            errMsg += ' Use the `help` command to learn more.';
         }
         // wait a minute, these aren't nachos. these are bear cubs.
         return errMsg;
@@ -7046,7 +7046,7 @@ module.exports = function (bot) {
 
     function welcome (name, room, room_name) {
 		if(room_name != null){
-			message = 'Welcome to the ' + room_name + '!' +
+			message = 'Welcome to the ' + room_name + ' chatroom!' +
 			'If you have a question, just post it, and if anyone\'s free and interested they\'ll help. ' +
 			'If you want to report an abusive user or a problem in this room, ping TheLittleNaruto.';
 		}	
