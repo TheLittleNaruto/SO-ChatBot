@@ -7123,7 +7123,7 @@ module.exports = function (bot) {
                 return message;
             }
 
-            welcome(args, args.get('room_id'), args.get('room_name');
+            welcome(args, args.get('room_id'), args.get('room_name'));
         },
         permission: {
             del: 'NONE'
