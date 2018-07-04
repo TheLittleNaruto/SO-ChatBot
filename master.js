@@ -4278,7 +4278,7 @@ module.exports = function (bot) {
         'It means I aint got time to learn your $5 words.',
         'My pocket dictionary just isn\'t good enough for you.'
     ];
-    var wikiUrl = 'http://en.wiktionary.org';
+    var wikiUrl = 'https://en.wiktionary.org';
 
     // I wish regexps had the x flag...
     /*
@@ -4466,7 +4466,7 @@ module.exports = function (bot) {
             var self = this;
 
             bot.IO.jsonp({
-                url: 'http://en.wiktionary.org/w/api.php',
+                url: 'https://en.wiktionary.org/w/api.php',
                 jsonpName: 'callback',
                 data: {
                     action: 'query',
