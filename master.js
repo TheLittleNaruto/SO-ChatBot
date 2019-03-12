@@ -2601,7 +2601,7 @@ module.exports = function (bot) {
     var personality = {
         bitchiness: 0,
         thanks: {
-            0: ['You kiss-ass', 'Most welcome'],
+            0: ['It\'s just my job.', 'Most welcome'],
             0.5: ['Thank you for noticing', 'teehee'],
             1: ['Took you long enough', 'My pleasure', 'Don\'t mention it']
         },
