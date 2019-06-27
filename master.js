@@ -7120,6 +7120,9 @@ module.exports = function (bot) {
         name: 'welcome',
         fun: function (args) {
             if (!args.length) {
+		    message = 'Welcome to the ' + args.get('room_name') + ' chatroom!' +
+			'If you have a question, just post it, and if anyone\'s free and interested they\'ll help. ' +
+			'If you want to report an abusive user or a problem in this room, ping TheLittleNaruto.';
                 return message;
             }
 
