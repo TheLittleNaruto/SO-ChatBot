@@ -2110,7 +2110,7 @@ module.exports = function (bot) {
             // I've removed the sample keys so I can easily
             // change them with the bot loader script.
 
-            //weatherKey: '',
+            weatherKey: '42e4eae7eeaffc938fa369c358b6bad9',
             //githubToken: ''
         },
         bot.memory.get('config', {})
