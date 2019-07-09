@@ -4844,7 +4844,7 @@ module.exports = function (bot) {
         // lose the game. less bitter messages? maybe.
         lose: function () {
             this.end = true;
-            return 'You people suck. The word is ' + this.word;
+            return 'You folks should do more reading. The word is ' + this.word;
         },
 
         winCheck: function () {
